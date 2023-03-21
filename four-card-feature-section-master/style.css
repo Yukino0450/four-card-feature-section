@@ -1,0 +1,176 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+
+*/
+
+/*region
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+endregion*/
+
+body {
+  width: 100vw;
+  font-family: Poppins;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6vh 15vw;
+}
+
+.top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top span {
+  font-weight: 200;
+  font-size: larger;
+}
+
+.top strong {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.top p {
+  font-weight: 200;
+  font-size: x-small;
+  width: 28vw;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3vh;
+}
+
+#card {
+  font-weight: 200;
+  font-size: x-small;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: 0 10px 10px 0 rgba(198, 198, 198, 0.5);
+}
+
+.left {
+  border-top: #43d3d3 solid 3px;
+  margin-right: 5vh;
+}
+
+.top-card {
+  border-top: #ea5453 solid 3px;
+}
+
+.bottom-card {
+  border-top: #fcae4a solid 3px;
+  margin-top: 5vh;
+}
+
+.right {
+  border-top: #569cf2 solid 3px;
+  margin-left: 5vh;
+}
+
+.explanation {
+  padding: 5vh 2vw;
+}
+
+strong {
+  font-size: 1vw;
+}
+
+img {
+  width: 7vh;
+  position: relative;
+  float: right;
+  right: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: unset;
+  }
+
+  .top {
+    width: 81vw;
+  }
+
+  .top p {
+    width: 75vw;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #card {
+    width: 70vw;
+    height: 25vh;
+  }
+  .right {
+    margin-left: 0;
+    margin-top: 5vh;
+  }
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 5vh;
+  }
+
+  strong {
+    font-size: 4vw;
+  }
+
+  .explanation {
+    padding: 3vh 3vw;
+  }
+}
